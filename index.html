@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta name="description" content="Simon Game">
+    <meta name="author" content="Farewing">
+	<title>Simon Game</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/01.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Alfa+Slab+One|VT323|Oswald' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<audio src="media/nainai.mp3" id="audio" preload="auto" loop></audio>
+<div class="container">
+<div class="panel">
+	<div class="ring">
+		<div class="rw">
+			<div class="green t-l push unclickable" id="0"></div><!--
+		 --><div class="yellow t-r push unclickable" id="1"></div>
+		</div>
+		<div class="rw">
+			<div class="red b-l push unclickable" id="3"></div><!--
+		 --><div class="blue b-r push unclickable" id="2"></div>
+		</div>
+	</div>
+	<div class="center">
+		<h1 class="brand">Nainai</h1>
+		<div class="rw">
+			<div class="display">
+				<h1 class="count led-off">--</h1>
+				<h3 class="lable">COUNT</h3>
+			</div>
+			<div class="btn-box">
+				<div class="btn clickable" id="start"></div>
+				<h3 class="lable">START</h3>
+			</div>
+			<div class="btn-box">
+				<div class="btn clickable" id="strict"></div>
+				<h3 class="lable">STRICT</h3>
+				<div class="led" id="mode-led"></div>
+			</div>
+		</div>
+		<div class="rw bot">
+			<h3 class="lable">OFF</h3>
+			<div class="slot">
+				<div class="switch" id="pwr-sw"></div>
+			</div>
+			<h3 class="lable">ON</h3>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
