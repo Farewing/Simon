@@ -229,7 +229,7 @@ $(document).ready(function() {
 					light(pushNum);
 					//game.lastPush = obj;
 					game.index++;
-					if (game.index == 1) {
+					if (game.index == 10) {
 						$('.push').removeClass('clickable').addClass('unclickable');
 						game.sqTime = setTimeout(notifyWin, 800);
 					} else if (game.index < game.sequence.length) {
